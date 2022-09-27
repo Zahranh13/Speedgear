@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Speedgear-Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <div class="background">
+        <img src="images/Background_map.png" class="bg">
+        <img src="images/Logo.png" class="logo">
+        <img src="images/Map Illustration.png" class="map">
+        <div class="freeroam">
+            <img src="images/Free_Roam_Community.png">
+            <div class="small"></div>
+        </div>
+        <div class="playtoearn">
+            <img src="images/Play_to_Earn.png">
+            <div class="small"></div>
+        </div>
+        <div class="Leaderboard">
+            <img src="images/Leaderboard.png">
+            <div class="small"></div>
+        </div>
+        <img src="images/Awan.png" class="cloud">
+        <div id="navbar">
+            <div class="options">
+                <a href="#"><img src="images/menu home.png" class="home"></a>
+                <a href="#"><img src="images/menu minting.png" class="minting"></a>
+                <a href="#"><img src="images/menu gallery.png" class="gallery"></a>
+                <a href="#"><img src="images/menu nft.png" class="nft"></a>
+                <a href="#"><img src="images/menu wallet.png" class="wallet"></a>
+            </div>
+            <a href="#"><img src="images/button map.png" class="buttonmap"></a>
+        </div>
+        <div id="menubtn">
+            <img src="images/menu=on.png" id="menu">  
+        </div>
+    </div>
+    
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
+
+        navbar.style.right == "480px";
+
+        menubtn.onclick = function(){
+            if(navbar.style.right == "-480px"){
+                navbar.style.right = "0";
+                menu.src = "images/menu=off.png";
+            }
+            else{
+                navbar.style.right = "-480px";
+                menu.src = "images/menu=on.png";
+            }
+        }
+    </script>
+</body>
